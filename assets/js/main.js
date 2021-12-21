@@ -255,3 +255,32 @@
   });
 
 })()
+/*===========================envoie de mail==========*/
+function sendmail() {
+  var nom = $('#name').val();
+  var email = $('#email').val();
+  var subject = $('#subject').val();
+  var message = $('#text').val();
+  // var body = $('#body').val();
+  var Body = 'mail: ' + email + '<br> <br> nom: ' + nom +'<br> <br> Object: ' + subject+ '<br> <br> message: ' + message;
+  Email.send({
+      SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+      // To: 'am.25.emman@gmail.com',
+      To: 'edisontchondo@gmail.com',
+      From: 'smart@servicetg.net',
+      Subject: "Nouveau message depuis le site de Smartservicetg.net ",
+      Body: Body
+  }).then(
+      message => {
+          //console.log (message);
+          if (message == 'OK') {
+              alert('Votre message a été envoyer avec succes nous vous reviendrons.');
+          } else {
+              console.error(message);
+              alert('Erreur veillez ressayer. ')
+
+          }
+
+      }
+  );
+}
