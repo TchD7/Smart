@@ -267,7 +267,7 @@ function sendmail() {
       SecureToken: "47f95659-ae45-4696-af1a-15894481389b",
       // To: 'am.25.emman@gmail.com',
       To: 'edisontchondo@gmail.com',    
-      From: 'smart@servicetg.net',
+      From: 'edisontchondo@gmail.com',
       Subject: "Nouveau message depuis le site de Smartservicetg.net ",
       Body: Body
   }).then(
