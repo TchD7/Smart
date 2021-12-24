@@ -264,15 +264,15 @@ function sendmail() {
   // var body = $('#body').val();
   var Body = 'mail: ' + email + '<br> <br> nom: ' + nom +'<br> <br> Object: ' + subject+ '<br> <br> message: ' + message;
   Email.send({
-      SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+      SecureToken: "47f95659-ae45-4696-af1a-15894481389b",
       // To: 'am.25.emman@gmail.com',
-      To: 'edisontchondo@gmail.com',
+      To: 'edisontchondo@gmail.com',    
       From: 'smart@servicetg.net',
       Subject: "Nouveau message depuis le site de Smartservicetg.net ",
       Body: Body
   }).then(
       message => {
-          //console.log (message);
+          //console.log (message) hig ydiopjo (zadfvb=à=àçàèç_t("ffu;
           if (message == 'OK') {
               alert('Votre message a été envoyer avec succes nous vous reviendrons.');
           } else {
